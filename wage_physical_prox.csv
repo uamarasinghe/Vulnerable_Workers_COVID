@@ -1,0 +1,408 @@
+﻿noc_title,exposed_to_disease_infections,median_hourly_wage,physical_proximity,pop,occupation_type
+8421 Chain saw and skidder operators,0.0125,22.94,0.0725,415,Other
+5121 Authors and writers,0,27.69,0.14,4900,Other
+8431 General farm workers,0.0125,16,0.235,10665,Other
+8611 Harvesting labourers,0.0125,14,0.235,1415,Other
+"9235 Pulping, papermaking and coating control operators",0.125,24.68,0.2925,785,Other
+9435 Paper converting machine operators,0.125,24.43,0.2925,1785,Other
+"9614 Labourers in wood, pulp and paper processing",0.125,18.5,0.2925,2970,Other
+7322 Motor vehicle body repairers,0.03,20.67,0.3075,6945,Other
+4162 Economists and economic policy researchers and analysts,0.01,43.94,0.3125,6745,Other
+"8211 Supervisors, logging and forestry",0.0275,26,0.32,290,Other
+5241 Graphic designers and illustrators,0,24.02,0.3375,8220,Other
+5244 Artisans and craftspersons,0.02,17,0.34,1835,Other
+1121 Human resources professionals,0.12,35.16,0.3425,19590,Other
+1223 Human resources and recruitment officers,0.12,28.85,0.3425,10325,Other
+1432 Payroll administrators,0.07,26,0.37,8590,Other
+1454 Survey interviewers and statistical clerks,0,21,0.37,1880,Other
+4163 Business development officers and marketing researchers and consultants,0,35.9,0.375,20030,Other
+5225 Audio and video recording technicians,0.0075,28.18,0.38,1285,Other
+1221 Administrative officers,0.08,23.76,0.3875,65030,Other
+1222 Executive assistants,0.08,29.31,0.3875,11250,Other
+8432 Nursery and greenhouse workers,0.01,15.78,0.39,760,Other
+1225 Purchasing agents and officers,0.0475,28.57,0.3925,10395,Other
+0113 Purchasing managers,0.03,42.05,0.395,6810,Other
+0421 Administrators - post-secondary education and vocational training,0.08,48.08,0.395,220,Other
+2113 Geoscientists and oceanographers,0.065,43.23,0.395,995,Other
+"2161 Mathematicians, statisticians and actuaries",0.01,42,0.395,5150,Other
+4211 Paralegal and related occupations,0.01,28.85,0.4,14090,Other
+"4161 Natural and applied science policy researchers, consultants and program officers",0.035,41.03,0.4025,5390,Other
+0213 Computer and information systems managers,0.0125,53.37,0.4075,23895,Other
+0112 Human resources managers,0.1025,44.1,0.41,13855,Other
+2144 Geological engineers,0.065,35.1,0.41,100,Other
+7622 Railway and motor transport labourers,0.15,19,0.41,660,Other
+1122 Professional occupations in business management consulting,0.02,37.4,0.4125,32700,Other
+1313 Insurance underwriters,0,31.79,0.4125,7170,Other
+0731 Managers in transportation,0.1125,39.9,0.415,11480,Other
+7511 Transport truck drivers,0.0725,20.2,0.415,80445,Other
+6731 Light duty cleaners,0.515,15,0.4175,73370,Sales & Service
+"4412 Home support workers, housekeepers and related occupations",0.515,16.5,0.4175,23030,Other
+4168 Program officers unique to government,0,41.25,0.42,2230,Other
+7381 Printing press operators,0.0025,22,0.4225,1990,Other
+0211 Engineering managers,0.0325,50.51,0.425,5315,Other
+0212 Architecture and science managers,0.0325,48.72,0.425,2175,Other
+2121 Biologists and related scientists,0.275,37,0.425,4475,Other
+"7334 Motorcycle, all-terrain vehicle and other related mechanics",0,28.48,0.4275,810,Other
+"1452 Correspondence, publication and regulatory clerks",0.025,22,0.43,5365,Other
+"8252 Agricultural service contractors, farm supervisors and specialized livestock workers",0.0725,16.93,0.43,1025,Other
+6231 Insurance agents and brokers,0.0275,25.96,0.4325,24435,Sales & Service
+"0013 Senior managers - financial, communications and other business services",0.18,52.08,0.4325,21410,Other
+"0014 Senior managers - health, education, social and community services and membership organizations",0.18,53.46,0.4325,3385,Other
+"0015 Senior managers - trade, broadcasting and other services, n.e.c.",0.18,56.37,0.4325,11560,Other
+"0016 Senior managers - construction, transportation, production and utilities",0.18,57.03,0.4325,16960,Other
+"1113 Securities agents, investment dealers and brokers",0,29.74,0.4325,7675,Other
+2175 Web designers and developers,0.01,33.65,0.4375,8235,Other
+2212 Geological and mineral technologists and technicians,0.0375,25.77,0.4375,545,Other
+1311 Accounting technicians and bookkeepers,0.0425,22.14,0.4425,33775,Other
+1431 Accounting and related clerks,0.0425,21,0.4425,42335,Other
+2147 Computer engineers (except software engineers and designers),0,43.27,0.4425,7990,Other
+2234 Construction estimators,0.0225,28.13,0.4425,6015,Other
+"9442 Weavers, knitters and other fabric making occupations",0.0425,15,0.4425,855,Other
+2173 Software engineers and designers,0,45.67,0.445,22770,Other
+2142 Metallurgical and materials engineers,0.02,40.87,0.4475,465,Other
+0114 Other administrative services managers,0.2325,34.04,0.45,7995,Other
+0311 Managers in health care,0.34,45,0.45,10785,Other
+1423 Desktop publishing operators and related occupations,0.02,21.8,0.45,300,Other
+3011 Nursing co-ordinators and supervisors,0.34,38.46,0.45,5015,Other
+"1513 Couriers, messengers and door-to-door distributors",0.73,17,0.4525,10055,Other
+2131 Civil engineers,0.0425,38.46,0.4525,8955,Other
+2134 Chemical engineers,0.1125,32.69,0.4525,2730,Other
+1242 Legal administrative assistants,0.0125,21.11,0.455,14575,Other
+6221 Technical sales specialists - wholesale trade,0.0575,23.47,0.4575,27530,Sales & Service
+"1123 Professional occupations in advertising, marketing and public relations",0.0425,30.29,0.4575,19735,Other
+1254 Statistical officers and related research support occupations,0.11,28.04,0.46,1815,Other
+"4164 Social policy researchers, consultants and program officers",0.11,35.38,0.46,6695,Other
+"4169 Other professional occupations in social science, n.e.c.",0.11,38.46,0.46,1420,Other
+"9441 Textile fibre and yarn, hide and pelt processing machine operators and workers",0.0025,15.5,0.46,715,Other
+2115 Other professional occupations in physical sciences,0.02,46.15,0.4625,270,Other
+2174 Computer programmers and interactive media developers,0.01,38.2,0.4625,37440,Other
+2152 Landscape architects,0,36.21,0.465,290,Other
+1112 Financial and investment analysts,0,33,0.47,25385,Other
+7444 Pest controllers and fumigators,0.2625,22.75,0.47,1125,Other
+6235 Financial sales representatives,0.065,22.05,0.4725,27545,Sales & Service
+6314 Customer and information services supervisors,0.0925,25,0.4725,3800,Sales & Service
+"0124 Advertising, marketing and public relations managers",0.0175,37.5,0.4725,19120,Other
+"1211 Supervisors, general office and administrative support workers",0.0925,25,0.4725,2650,Other
+"1212 Supervisors, finance and insurance office workers",0.0925,30.22,0.4725,6355,Other
+"1213 Supervisors, library, correspondence and related information workers",0.0925,30.77,0.4725,155,Other
+2283 Information systems testing technicians,0,37.6,0.4725,4040,Other
+4011 University professors and lecturers,0.035,49.04,0.4725,65,Other
+5224 Broadcast technicians,0.0275,24.04,0.475,850,Other
+"5243 Theatre, fashion, exhibit and other creative designers",0,21.63,0.475,1265,Other
+7312 Heavy-duty equipment mechanics,0.1475,25.84,0.475,3385,Other
+"7372 Drillers and blasters - surface mining, quarrying and construction",0.015,27.76,0.475,315,Other
+0601 Corporate sales managers,0.0325,40.87,0.4775,22700,Other
+2171 Information systems analysts and consultants,0.045,38.94,0.4775,69015,Other
+7371 Crane operators,0.0175,29,0.48,3835,Other
+6732 Specialized cleaners,0.47,14,0.4825,9810,Sales & Service
+"6733 Janitors, caretakers and building superintendents",0.47,18,0.4825,49385,Sales & Service
+2154 Land surveyors,0.0925,32.51,0.4825,440,Other
+"4165 Health policy researchers, consultants and program officers",0.41,39.01,0.4825,10985,Other
+1253 Records management technicians,0.02,30,0.49,1250,Other
+"6313 Accommodation, travel, tourism and related services supervisors",0.035,23.08,0.4925,680,Sales & Service
+2146 Aerospace engineers,0,45,0.4975,2065,Other
+7361 Railway and yard locomotive engineers,0.125,40,0.4975,740,Other
+"9535 Plastic products assemblers, finishers and inspectors",0.0075,16,0.4975,5305,Other
+0711 Construction managers,0.04,39.78,0.5,23755,Other
+0712 Home building and renovation managers,0.04,20,0.5,19855,Other
+5212 Technical occupations related to museums and art galleries,0,19.44,0.5,575,Other
+1252 Health information management occupations,0.235,27,0.5025,1250,Other
+2221 Biological technologists and technicians,0.39,25.08,0.505,1305,Other
+1524 Purchasing and inventory control workers,0.1025,17.2,0.5075,8985,Other
+9241 Power engineers and power systems operators,0.06,38.43,0.5075,4545,Other
+6315 Cleaning supervisors,0.4675,24.77,0.51,2810,Sales & Service
+1224 Property administrators,0.02,20.31,0.51,18055,Other
+2133 Electrical and electronics engineers,0.025,40,0.5125,12975,Other
+9434 Other wood processing machine operators,0.0075,18.25,0.5125,950,Other
+9437 Woodworking machine operators,0.0075,17,0.5125,1640,Other
+6411 Sales and account representatives - wholesale trade (non-technical),0.025,21.98,0.515,33640,Sales & Service
+1241 Administrative assistants,0.185,22,0.515,43850,Other
+2172 Database analysts and data administrators,0.0425,33.65,0.515,7575,Other
+7231 Machinists and machining and tooling inspectors,0.04,23.5,0.515,11955,Other
+9417 Machining tool operators,0.04,23,0.515,5270,Other
+1414 Receptionists,0.305,17,0.5175,37360,Other
+5111 Librarians,0.2875,28,0.52,20,Other
+1523 Production logistics co-ordinators,0.0275,26.44,0.5225,6805,Other
+2233 Industrial engineering and manufacturing technologists and technicians,0.0125,24,0.5225,6600,Other
+"7202 Contractors and supervisors, electrical trades and telecommunications occupations",0.0325,32,0.5225,4155,Other
+"0121 Insurance, real estate and financial brokerage managers",0.0375,50.48,0.525,13760,Other
+"3223 Dental technologists, technicians and laboratory assistants",0.715,22,0.525,2020,Other
+5242 Interior designers and interior decorators,0.0725,20,0.525,2860,Other
+2151 Architects,0.0175,31.19,0.5275,755,Other
+2251 Architectural technologists and technicians,0.02,24,0.5275,780,Other
+5223 Graphic arts technicians,0.0075,19.71,0.5275,680,Other
+"6741 Dry cleaning, laundry and related occupations",0.5475,16,0.53,6225,Sales & Service
+1415 Personnel clerks,0.135,21.63,0.5325,3200,Other
+1451 Library assistants and clerks,0.015,17,0.535,20,Other
+2153 Urban and land use planners,0.0575,36.06,0.535,3470,Other
+5122 Editors,0,25,0.535,5080,Other
+"1315 Customs, ship and other brokers",0.0125,24,0.5375,1765,Other
+2281 Computer network technicians,0.025,32,0.5375,17740,Other
+7442 Waterworks and gas maintenance workers,0.1675,34,0.5375,1240,Other
+1422 Data entry clerks,0.03,20,0.5425,11930,Other
+5231 Announcers and other broadcasters,0.0975,21.98,0.5425,1300,Other
+9532 Furniture and fixture assemblers and inspectors,0.0225,18,0.5425,4065,Other
+9534 Furniture finishers and refinishers,0.0225,17,0.5425,1575,Other
+9611 Labourers in mineral and metal processing,0.005,18,0.5425,2985,Other
+9613 Labourers in chemical products processing and utilities,0.005,20,0.5425,3670,Other
+9615 Labourers in rubber and plastic products manufacturing,0.005,14,0.5425,3310,Other
+"9619 Other labourers in processing, manufacturing and utilities",0.005,14,0.5425,37740,Other
+5123 Journalists,0.09,33.27,0.545,3065,Other
+6332 Bakers,0.0725,14,0.5475,14500,Sales & Service
+6521 Travel counsellors,0.0025,17.5,0.5475,775,Sales & Service
+6563 Pet groomers and animal care workers,0.3425,14,0.5475,1550,Sales & Service
+4154 Professional occupations in religion,0.3975,23.65,0.5475,715,Other
+0125 Other business services managers,0.14,35,0.5525,7265,Other
+0131 Telecommunication carriers managers,0.14,48.08,0.5525,1050,Other
+0411 Government managers - health and social policy development and program administration,0.14,56.41,0.5525,865,Other
+"0412 Government managers - economic analysis, policy development and program administration",0.14,49.23,0.5525,1010,Other
+0414 Other managers in public administration,0.14,53.85,0.5525,1230,Other
+"0511 Library, archive, museum and art gallery managers",0.14,38.46,0.5525,215,Other
+"0512 Managers - publishing, motion pictures, broadcasting and performing arts",0.14,28.85,0.5525,1890,Other
+0714 Facility operation and maintenance managers,0.14,31.25,0.5525,14860,Other
+0911 Manufacturing managers,0.045,40.72,0.5525,23835,Other
+0912 Utilities managers,0.14,60.44,0.5525,2520,Other
+2141 Industrial and manufacturing engineers,0.015,32.78,0.5525,5870,Other
+7272 Cabinetmakers,0.0025,18,0.5525,4625,Other
+9473 Binding and finishing machine operators,0,17.65,0.5525,370,Other
+9471 Plateless printing equipment operators,0.04,22.5,0.555,1255,Other
+"9472 Camera, platemaking and other prepress occupations",0,23,0.555,380,Other
+"1214 Supervisors, mail and message distribution occupations",0.1675,22,0.5575,1785,Other
+2112 Chemists,0.2325,32.69,0.565,5215,Other
+2231 Civil engineering technologists and technicians,0.2175,24.04,0.565,3245,Other
+2252 Industrial designers,0.0525,28.21,0.565,1965,Other
+7232 Tool and die makers,0,27,0.5675,7440,Other
+7521 Heavy equipment operators (except crane),0.02,30,0.57,11755,Other
+9431 Sawmill machine operators,0.055,24,0.57,570,Other
+1512 Letter carriers,0.0825,25,0.5725,8890,Other
+4155 Probation and parole officers and related occupations,0.52,40.26,0.5725,1030,Other
+6222 Retail and wholesale buyers,0.1025,23.08,0.575,9695,Sales & Service
+6552 Other customer and information services representatives,0.0475,17.5,0.575,63655,Sales & Service
+"9411 Machine operators, mineral and metal processing",0.13,19.47,0.575,2235,Other
+9418 Other metal products machine operators,0.13,18.5,0.575,2720,Other
+"4153 Family, marriage and other related counsellors",0.3025,28.85,0.5775,5775,Other
+1227 Court officers and justices of the peace,0.365,35,0.58,1450,Other
+2241 Electrical and electronics engineering technologists and technicians,0.0525,28.21,0.58,11310,Other
+2132 Mechanical engineers,0.065,36.06,0.5825,14465,Other
+"2148 Other professional engineers, n.e.c.",0.065,36.32,0.5825,1045,Other
+2211 Chemical technologists and technicians,0.08,23,0.5825,6400,Other
+9474 Photographic and film processors,0.41,17.5,0.5825,255,Other
+"9231 Central control and process operators, mineral and metal processing",0.04,33,0.585,360,Other
+"9525 Assemblers, fabricators and inspectors, industrial electrical motors and transformers",0.065,18,0.585,715,Other
+0422 School principals and administrators of elementary and secondary education,0.4875,48.56,0.5875,30,Other
+"0423 Managers in social, community and correctional services",0.3475,42,0.5875,5685,Other
+"9523 Electronics assemblers, fabricators, inspectors and testers",0.0275,15,0.5875,6935,Other
+"9527 Machine operators and inspectors, electrical apparatus manufacturing",0.0275,21.27,0.5875,780,Other
+5251 Athletes,0.0575,23.39,0.5925,20,Other
+7293 Insulators,0.24,31.4,0.5925,2065,Other
+9422 Plastics processing machine operators,0.025,15,0.5925,8690,Other
+9521 Aircraft assemblers and aircraft assembly inspectors,0.0875,28,0.595,1965,Other
+7251 Plumbers,0.5825,28,0.5975,12960,Other
+7333 Electrical mechanics,0.255,30,0.5975,1025,Other
+6621 Service station attendants,0.035,14.25,0.6,3115,Sales & Service
+1525 Dispatchers,0.11,23.5,0.6,11260,Other
+7235 Structural metal and platework fabricators and fitters,0.06,23,0.6,1530,Other
+9612 Labourers in metal fabrication,0.06,16,0.6,5900,Other
+2232 Mechanical engineering technologists and technicians,0.0375,32,0.6025,5965,Other
+"7284 Plasterers, drywall installers and finishers and lathers",0.055,34,0.6075,9905,Other
+"1251 Court reporters, medical transcriptionists and related occupations",0.1275,24.19,0.61,3010,Other
+4012 Post-secondary teaching and research assistants,0.06,24.63,0.6125,750,Other
+7282 Concrete finishers,0.03,30.8,0.6125,3040,Other
+"9414 Concrete, clay and stone forming operators",0.03,21,0.6125,1765,Other
+6345 Upholsterers,0.0225,18.88,0.615,960,Sales & Service
+5211 Library and public archive technicians,0.1625,26,0.615,145,Other
+1114 Other financial officers,0.1775,32.82,0.6225,45385,Other
+1411 General office support workers,0.1775,19,0.6225,68365,Other
+1416 Court clerks,0.1325,23.8,0.6225,865,Other
+"1434 Banking, insurance and other financial clerks",0.1775,20,0.6225,10430,Other
+4151 Psychologists,0.5675,40,0.6225,6110,Other
+7246 Telecommunications installation and repair workers,0.215,28.45,0.6225,3395,Other
+9446 Industrial sewing machine operators,0,15,0.6225,5005,Other
+9413 Glass forming and finishing machine operators and glass cutters,0.04,17,0.625,1265,Other
+0822 Managers in horticulture,0.0375,18.79,0.63,245,Other
+2263 Inspectors in public and environmental health and occupational health and safety,0.2725,40.02,0.63,6345,Other
+7362 Railway conductors and brakemen/women,0.15,34,0.63,680,Other
+6525 Hotel front desk clerks,0.025,15.8,0.635,5480,Sales & Service
+2262 Engineering inspectors and regulatory officers,0.1075,34.87,0.635,1045,Other
+2264 Construction inspectors,0.1075,32.69,0.635,2785,Other
+7245 Telecommunications line and cable workers,0.335,27.5,0.635,2050,Other
+7441 Residential and commercial installers and servicers,0.015,20,0.635,16100,Other
+2282 User support technicians,0.075,30.29,0.6375,13180,Other
+7294 Painters and decorators (except interior decorators),0.035,20,0.6375,15425,Other
+9421 Chemical plant machine operators,0.075,19.19,0.6375,3995,Other
+"9536 Industrial painters, coaters and metal finishing process operators",0.035,21.8,0.6375,5895,Other
+"5131 Producers, directors, choreographers and related occupations",0.015,33.65,0.64,3530,Other
+7318 Elevator constructors and mechanics,0.495,43.75,0.64,2045,Other
+6346 Funeral directors and embalmers,0.8275,19,0.6425,1530,Sales & Service
+7283 Tilesetters,0.1175,34.25,0.6425,3770,Other
+1521 Shippers and receivers,0.045,18.5,0.645,31885,Other
+2261 Non-destructive testers and inspection technicians,0.0375,32.82,0.645,775,Other
+"7201 Contractors and supervisors, machining, metal forming, shaping and erecting trades and related occupations",0.005,34,0.645,3270,Other
+"7303 Supervisors, printing and related occupations",0.005,28.85,0.645,215,Other
+7534 Air transport ramp attendants,0.035,22,0.645,3610,Other
+"9211 Supervisors, mineral and metal processing",0.005,25.64,0.645,1985,Other
+"9212 Supervisors, petroleum, gas and chemical processing and utilities",0.005,30,0.645,3550,Other
+"9213 Supervisors, food and beverage processing",0.005,27.1,0.645,3800,Other
+"9214 Supervisors, plastic and rubber products manufacturing",0.005,20,0.645,1920,Other
+"9215 Supervisors, forest products processing",0.005,30,0.645,835,Other
+"9217 Supervisors, textile, fabric, fur and leather products processing and manufacturing",0.005,20,0.645,495,Other
+"9221 Supervisors, motor vehicle assembling",0.005,27.06,0.645,5480,Other
+"9222 Supervisors, electronics manufacturing",0.005,25,0.645,795,Other
+"9223 Supervisors, electrical products manufacturing",0.005,32,0.645,445,Other
+"9224 Supervisors, furniture and fixtures manufacturing",0.005,24.78,0.645,885,Other
+"9226 Supervisors, other mechanical and metal products manufacturing",0.005,28.85,0.645,1280,Other
+"9227 Supervisors, other products manufacturing and assembly",0.005,22,0.645,1150,Other
+"9415 Inspectors and testers, mineral and metal processing",0.0375,26,0.645,850,Other
+"9447 Inspectors and graders, textile, fabric, fur and leather products manufacturing",0.0375,14,0.645,370,Other
+3212 Medical laboratory technicians and pathologists' assistants,0.7675,23,0.6475,6770,Other
+3219 Other medical technologists and technicians (except dental health),0.7675,20,0.6475,14420,Other
+1435 Collectors,0.13,22,0.65,6075,Other
+9416 Metalworking and forging machine operators,0.0125,18.75,0.65,6435,Other
+"2244 Aircraft instrument, electrical and avionics mechanics, technicians and inspectors",0.03,40,0.6575,1535,Other
+"1215 Supervisors, supply chain, tracking and scheduling co-ordination occupations",0.1575,24.04,0.66,14520,Other
+1526 Transportation route and crew schedulers,0.1575,24.04,0.66,2055,Other
+"7302 Contractors and supervisors, heavy equipment operator crews",0.1575,35.53,0.66,8545,Other
+"7304 Supervisors, railway transport operations",0.1575,36,0.66,465,Other
+"7305 Supervisors, motor transport and other ground transit operators",0.1575,28,0.66,3205,Other
+"0513 Recreation, sports and fitness program and service directors",0.135,28.85,0.6625,855,Other
+4152 Social workers,0.3475,38,0.6625,16715,Other
+"4167 Recreation, sports and fitness policy researchers, consultants and program officers",0.135,25.71,0.6625,2210,Other
+"5254 Program leaders and instructors in recreation, sport and fitness",0.135,16,0.6625,15675,Other
+7331 Oil and solid fuel heating mechanics,0.15,21.2,0.6625,425,Other
+"4166 Education policy researchers, consultants and program officers",0.0925,35,0.665,2200,Other
+8422 Silviculture and forestry workers,0.1725,21.14,0.665,265,Other
+8616 Logging and forestry labourers,0.1725,25,0.665,180,Other
+2242 Electronic service technicians (household and business equipment),0.0975,24.04,0.6675,15175,Other
+7332 Appliance servicers and repairers,0.0975,21.35,0.6675,780,Other
+7233 Sheet metal workers,0.0975,32,0.67,5180,Other
+2222 Agricultural and fish products inspectors,0.18,32.46,0.675,510,Other
+"9445 Fabric, fur and leather cutters",0,16,0.6775,535,Other
+6541 Security guards and related security service occupations,0.1625,14.5,0.68,39790,Sales & Service
+5221 Photographers,0.04,16.03,0.68,600,Other
+7445 Other repairers and servicers,0.15,19.3,0.6825,2165,Other
+7292 Glaziers,0.175,20,0.685,2490,Other
+"7301 Contractors and supervisors, mechanic trades",0.185,31.25,0.685,5170,Other
+9412 Foundry workers,0.075,18.5,0.685,855,Other
+7532 Water transport deck and engine room crew,0.185,27.04,0.6875,250,Other
+9526 Mechanical assemblers and inspectors,0.0025,24,0.6875,3540,Other
+"9537 Other products assemblers, finishers and inspectors",0.0025,17,0.6875,8375,Other
+7234 Boilermakers,0.1525,41.1,0.69,500,Other
+7533 Boat and cable ferry operators and related occupations,0.215,25,0.69,160,Other
+3132 Dietitians and nutritionists,0.7925,37.62,0.6925,3645,Other
+7621 Public works and maintenance labourers,0.44,23,0.6925,5925,Other
+9617 Labourers in food and beverage processing,0.055,14,0.6925,28605,Other
+5252 Coaches,0.1175,16.2,0.7,290,Other
+7281 Bricklayers,0.0025,37,0.7,7055,Other
+7295 Floor covering installers,0.08,19.7,0.7,5305,Other
+7314 Railway carmen/women,0.0725,30,0.7,745,Other
+7452 Material handlers,0.025,17,0.7,66770,Other
+4033 Educational counsellors,0.4925,32.42,0.7025,765,Other
+4156 Employment counsellors,0.4925,26.37,0.7025,2860,Other
+"9522 Motor vehicle assemblers, inspectors and testers",0.095,20.67,0.705,50160,Other
+1243 Medical administrative assistants,0.5275,24.33,0.7075,17040,Other
+"7204 Contractors and supervisors, carpentry trades",0.045,28.85,0.7075,6135,Other
+"7205 Contractors and supervisors, other construction trades, installers, repairers and servicers",0.045,35,0.7075,12680,Other
+"2274 Engineer officers, water transport",0.16,36.01,0.715,160,Other
+1226 Conference and event planners,0,21.63,0.7175,3395,Other
+"8255 Contractors and supervisors, landscaping, grounds maintenance and horticulture services",0.1275,25.48,0.7175,6820,Other
+3211 Medical laboratory technologists,0.9625,39,0.72,5865,Other
+7311 Construction millwrights and industrial mechanics,0.1475,28.5,0.7225,15685,Other
+"9461 Process control and machine operators, food and beverage processing",0.14,16,0.725,12605,Other
+"7384 Other trades and related occupations, n.e.c.",0.1,23.5,0.7275,1825,Other
+7611 Construction trades helpers and labourers,0.1,20,0.7275,58855,Other
+7612 Other trades helpers and labourers,0.1,18,0.7275,2715,Other
+4311 Police officers (except commissioned),0.6125,44.23,0.73,20615,Other
+"7203 Contractors and supervisors, pipefitting trades",0.21,43.27,0.73,1315,Other
+"7252 Steamfitters, pipefitters and sprinkler system installers",0.21,36,0.73,3695,Other
+7253 Gas fitters,0.21,27,0.73,2865,Other
+7522 Public works maintenance equipment operators and related workers,0.11,24,0.73,5335,Other
+7244 Electrical power line and cable workers,0.1,35,0.7325,2295,Other
+4031 Secondary school teachers,0.43,45.67,0.7375,150,Other
+7513 Taxi and limousine drivers and chauffeurs,0.2075,14.35,0.745,22335,Other
+7241 Electricians (except industrial and power system),0.11,35,0.7525,24060,Other
+7242 Industrial electricians,0.11,29.75,0.7525,6620,Other
+6322 Cooks,0.125,14,0.7575,59685,Sales & Service
+"6742 Other service support occupations, n.e.c.",0.5325,14,0.7575,3875,Sales & Service
+2224 Conservation and fishery officers,0.3125,34,0.7575,285,Other
+2225 Landscape and horticulture technicians and specialists,0.085,21,0.7575,4210,Other
+3414 Other assisting occupations in support of health services,0.5325,18,0.7575,9435,Other
+4212 Social and community service workers,0.5325,22,0.7575,32020,Other
+8612 Landscaping and grounds maintenance labourers,0.085,16,0.7575,32400,Other
+6551 Customer services representatives - financial institutions,0.1425,17.79,0.7625,29725,Sales & Service
+6211 Retail sales supervisors,0.24,17.31,0.765,14290,Sales & Service
+"6331 Butchers, meat cutters and fishmongers - retail and wholesale",0.025,14,0.765,4085,Sales & Service
+0621 Retail and wholesale trade managers,0.24,34.62,0.765,76815,Other
+"9462 Industrial butchers and meat cutters, poultry preparers and related workers",0.025,16.3,0.765,3015,Other
+0431 Commissioned police officers,0.5675,62.5,0.7675,320,Other
+7514 Delivery and courier service drivers,0.1075,22,0.77,24050,Other
+7291 Roofers and shinglers,0.0425,27,0.7725,6515,Other
+0631 Restaurant and food service managers,0.095,19.67,0.7775,43470,Other
+2275 Railway traffic controllers and marine traffic regulators,0.1825,38.48,0.78,345,Other
+6611 Cashiers,0.1675,14,0.7825,93940,Sales & Service
+5222 Film and video camera operators,0.075,27.18,0.79,595,Other
+"5227 Support occupations in motion pictures, broadcasting, photography and the performing arts",0.075,20,0.79,790,Other
+"8232 Oil and gas well drillers, servicers, testers and related workers",0.1075,26.64,0.79,655,Other
+"6711 Food counter attendants, kitchen helpers and related support occupations",0.0775,14,0.7925,139335,Sales & Service
+3141 Audiologists and speech-language pathologists,0.52,42,0.7925,2415,Other
+4215 Instructors of persons with disabilities,0.3575,26,0.795,1495,Other
+"8615 Oil and gas drilling, servicing and related labourers",0.07,27,0.795,210,Other
+6421 Retail salespersons,0.0525,14,0.7975,107520,Sales & Service
+"1228 Employment insurance, immigration, border services and revenue officers",0.6275,30.62,0.7975,1255,Other
+6321 Chefs,0.1475,17,0.805,24605,Sales & Service
+4411 Home child care providers,0.5175,15,0.805,19425,Other
+6523 Airline ticket and service agents,0.1225,17.53,0.81,4430,Sales & Service
+"6524 Ground and water transport ticket agents, cargo service representatives and related clerks",0.1225,19.92,0.81,875,Sales & Service
+4422 Correctional service officers,0.715,32.64,0.8125,3070,Other
+4413 Elementary and secondary school teacher assistants,0.4975,22,0.815,80,Other
+"1511 Mail, postal and related workers",0.1725,23,0.82,11100,Other
+2272 Air traffic controllers and related occupations,0.07,40.06,0.82,1075,Other
+4021 College and other vocational instructors,0.33,32.05,0.8225,5785,Other
+4214 Early childhood educators and assistants,0.5,18.46,0.83,44330,Other
+4216 Other instructors,0.22,14.56,0.83,1440,Other
+3231 Opticians,0.3975,28.85,0.8325,2815,Other
+"6622 Store shelf stockers, clerks and order fillers",0.2,14,0.8375,48975,Sales & Service
+"9465 Testers and graders, food and beverage processing",0.065,19.68,0.84,1425,Other
+7531 Railway yard and track maintenance workers,0.1425,27.9,0.8475,1250,Other
+3124 Allied primary health practitioners,0.87,50,0.8525,3255,Other
+6316 Other services supervisors,0.2875,16,0.8675,3615,Sales & Service
+"0651 Managers in customer and personal services, n.e.c.",0.2875,32.97,0.8675,4845,Other
+7236 Ironworkers,0.1,37.24,0.8675,2370,Other
+7243 Power system electricians,0.155,43,0.88,1095,Other
+"7512 Bus drivers, subway operators and other transit operators",0.725,24,0.8825,29825,Other
+3236 Massage therapists,0.35,25,0.8875,8860,Other
+3215 Medical radiation technologists,0.9225,40,0.8925,5240,Other
+3233 Licensed practical nurses,0.935,26.5,0.9,16400,Other
+3213 Animal health technologists and veterinary technicians,0.6675,19,0.915,315,Other
+"3214 Respiratory therapists, clinical perfusionists and cardiopulmonary technologists",0.975,38,0.9325,2570,Other
+3012 Registered nurses and registered psychiatric nurses,0.95,35,0.94,82730,Other
+3237 Other technical occupations in therapy and assessment,0.8625,20,0.95,4140,Other
+6311 Food service supervisors,0.255,15,0.9525,12690,Sales & Service
+3143 Occupational therapists,0.9175,43.08,0.9525,4280,Other
+3144 Other professional occupations in therapy and assessment,0.9175,25,0.9525,3085,Other
+3216 Medical sonographers,0.865,37,0.9525,2450,Other
+4032 Elementary school and kindergarten teachers,0.435,38.46,0.9525,140,Other
+6522 Pursers and flight attendants,0.77,19,0.955,5940,Sales & Service
+3234 Paramedical occupations,0.8925,42,0.965,6595,Other
+"3413 Nurse aides, orderlies and patient service associates",0.965,20,0.965,64220,Other
+"3217 Cardiology technologists and electrophysiological diagnostic technologists, n.e.c.",0.7375,25,0.97,890,Other
+3411 Dental assistants,0.96,21.43,0.985,11480,Other
+3142 Physiotherapists,0.67,40.51,0.9975,7235,Other
+3222 Dental hygienists and dental therapists,1,37,0.9975,9650,Other
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
