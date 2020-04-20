@@ -1,0 +1,387 @@
+<!-- Code from d3-graph-gallery.com -->
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Load color scale -->
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+<!-- Load tooltip -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+
+<!-- Create a div where the graph will take place -->
+<div id="essential_retail_workers"></div>
+
+<!-- A bit of CSS: change stroke color of circle on hover (white -> black) -->
+<style>
+.bubbles {
+  stroke-width: 3px;
+  stroke: #d0d3d4;
+  opacity: .6
+}
+.bubbles:hover {
+  stroke: black;
+}
+:root {
+  font-family: "MaRS Marcin"
+}
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+
+</style>
+
+
+<script>
+
+function responsivefy(svg) {
+  // get container + svg aspect ratio
+  var container = d3.select(svg.node().parentNode),
+      width = parseInt(svg.style("width")),
+      height = parseInt(svg.style("height")),
+      aspect = width / height;
+
+  // add viewBox and preserveAspectRatio properties,
+  // and call resize so that svg resizes on inital page load
+  svg.attr("viewBox", "0 0 " + width + " " + height)
+      .attr("preserveAspectRatio", "xMinYMid")
+      .call(resize);
+
+  // to register multiple listeners for same event type,
+  // you need to add namespace, i.e., 'click.foo'
+  // necessary if you call invoke this function for multiple svgs
+  // api docs: https://github.com/mbostock/d3/wiki/Selections#on
+  d3.select(window).on("resize." + container.attr("id"), resize);
+
+  // get width of container and resize svg to fit it
+  function resize() {
+      var targetWidth = parseInt(container.style("width"));
+      svg.attr("width", targetWidth);
+      svg.attr("height", Math.round(targetWidth / aspect));
+  }
+}
+
+
+// set the dimensions and margins of the graph
+const margin = {top: 40, right: 150, bottom: 60, left: 50};
+const width = 900 - margin.left - margin.right;
+const height = 550 - margin.top - margin.bottom;
+
+const fullWidth = width + margin.left + margin.right;
+const fullHeight = height + margin.top + margin.bottom;
+
+// append the svg object to the body of the page
+var svg = d3.select("#essential_retail_workers")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .call(responsivefy)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+//Read the data
+d3.csv("https://raw.githubusercontent.com/uamarasinghe/Vulnerable_Workers_COVID/master/wage_physical_prox.csv", function(data) {
+
+  // ---------------------------//
+  //       AXIS  AND SCALE      //
+  // ---------------------------//
+
+  // Add X axis
+
+
+  var xAxisLabelDict = {
+                        0: 'Work alone (0)',
+                        0.25: 'Not close (0.25)',
+                        0.50:'Slightly close (0.5)',
+                        0.75: "Moderately close (0.75)",
+                        1: 'Very close (1)'
+  }
+
+  var x = d3.scaleLinear()
+    .domain([0, 1])
+    .range([ 0, width ]);
+
+  svg.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x).tickValues(Object.keys(xAxisLabelDict)).tickFormat(v => xAxisLabelDict[v] || v));
+
+
+  // gridlines in x axis function
+  function make_x_gridlines() {
+    return d3.axisBottom(x)
+             .tickValues(Object.keys(xAxisLabelDict))
+    }
+
+  // add the X gridlines
+  svg.append("g")
+     .attr("class", "grid")
+     .attr("transform", "translate(0," + height + ")")
+     .call(make_x_gridlines()
+             .tickSize(-height)
+             .tickFormat("")
+            )
+
+
+  // text label for the x axis
+  svg.append("text")
+      .attr("transform",
+            "translate(" + (width/2) + " ," +
+                           (height + margin.top + 10) + ")")
+      .style("text-anchor", "middle")
+      .text("Physical Proximity to Others");
+
+
+
+  // Add Y axis
+  var y = d3.scaleLinear()
+    .domain([10, 65])
+    .range([ height, 0]);
+
+  svg.append("g")
+    .call(d3.axisLeft(y));
+
+  // // gridlines in y axis function
+  function make_y_gridlines() {
+    return d3.axisLeft(y)
+             .tickValues([15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65])
+        }
+
+  // add the y gridlines
+  svg.append("g")
+     .attr("class", "grid")
+     .call(make_y_gridlines()
+          .tickSize(-width)
+          .tickFormat("")
+                )
+
+  // text label for the y axis
+  svg.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left)
+      .attr("x", 0 - (height / 2))
+      .attr("dy", "1em")
+      .style("text-anchor", "middle")
+      .text("Median Hourly Wage ($)");
+
+  // Add a scale for bubble size
+  var z = d3.scaleSqrt()
+    .domain([0, 139000])
+    .range([ 0, 25]);
+
+  // Add a scale for bubble color
+  var myColor = d3.scaleOrdinal()
+    .domain(["Sales & Service", "Other"])
+    .range([d3.rgb("#003da5"), d3.rgb('#d0d3d4')]);
+
+
+
+  // ---------------------------//
+  //      TOOLTIP               //
+  // ---------------------------//
+
+
+  // Format O*NET attributes to 2 decimal places & population to grouped thousands with 2 significant digits
+  // https://github.com/d3/d3-format
+  var attribute_format = d3.format(".2f")
+  var popn_format = d3.format(",.2r")
+  var money_format = d3.format("($.0f")
+
+  var tooltipOffset = 60
+
+
+  // -1- Create a tooltip div that is hidden by default:
+  var tooltip = d3.select("#essential_retail_workers")
+      .append("div")      
+      .call(responsivefy)
+      .style("opacity", 1)
+      .style("position", "absolute")
+      .style("z-index", "21")
+      .attr("class", "tooltip")
+      .style("background-color", "#f0f1f2")
+      .style("border-radius", "5px")
+      .style("padding", "10px")
+      .style("color", "black")
+
+  // -2- Create 3 functions to show / update (when mouse move but stay on same circle) / hide the tooltip
+  var showTooltip = function(d) {
+    this.style.opacity = 1
+
+    tooltip
+      .transition()
+      .duration(200)
+    tooltip
+      .style("opacity", 1)
+      .html("<strong>Occupation:  </strong>" + d.noc_title.substring(5) + " (NOC " + d.noc_title.substring(4, 0) + ")" + "<br>"+
+            "<strong>Population:  </strong>" + popn_format(d.pop) + "<br>" +
+            "<strong>Physical Proximity:  </strong>" + attribute_format(d.physical_proximity) + "<br>" +
+            "<strong>Median Hourly Wage:  </strong>" + money_format(d.median_hourly_wage)
+           )
+
+      .style("left", (d3.mouse(this)[0]+tooltipOffset) + "px")
+      .style("top", (d3.mouse(this)[1]+tooltipOffset) + "px")
+  }
+  var moveTooltip = function(d) {
+    tooltip
+      .style("left", (d3.mouse(this)[0]+tooltipOffset) + "px")
+      .style("top", (d3.mouse(this)[1]+tooltipOffset) + "px")
+  }
+  var hideTooltip = function(d) {
+    this.style.opacity = ''
+    tooltip
+      .transition()
+      .duration(200)
+      .style("opacity", 0)
+  }
+
+
+  // ---------------------------//
+  //       HIGHLIGHT GROUP      //
+  // ---------------------------//
+
+  // What to do when one group is hovered
+  var highlight = function(d){
+    // reduce opacity of all groups
+    d3.selectAll(".bubbles").style("opacity", .05)
+    // expect the one that is hovered
+    d3.selectAll("."+d).style("opacity", 1)
+  }
+
+  // And when it is not hovered anymore
+  var noHighlight = function(d){
+    d3.selectAll(".bubbles").style("opacity", 1)
+  }
+
+
+  // ---------------------------//
+  //       CIRCLES              //
+  // ---------------------------//
+
+  data.sort((a,b) => b.pop-a.pop);
+
+  // Add dots
+  svg.append('g')
+    .selectAll("dot")
+    .data(data)
+    .enter()
+    .append("circle")
+      .attr("class", function(d) { return "bubbles " + d.noc_title })
+      .attr("cx", function (d) { return x(d.physical_proximity); } )
+      .attr("cy", function (d) { return y(d.median_hourly_wage); } )
+      .attr("r", function (d) { return z(d.pop); } )
+      .style("fill", "none" )
+      // .style("fill", function (d) { return myColor(d.occupation_type); } )
+      .style("stroke", function (d) { return myColor(d.occupation_type); } )
+    // -3- Trigger the functions for hover
+    .on("mouseover", showTooltip )
+    .on("mousemove", moveTooltip )
+    .on("mouseleave", hideTooltip )
+
+
+
+
+    // ---------------------------//
+    //       LEGEND              //
+    // ---------------------------//
+
+    // Add legend: circles
+    var valuesToShow = [680, 50000, 139000]
+    var xCircle = 750
+    var xLabel = 800
+    svg
+      .selectAll("legend")
+      .data(valuesToShow)
+      .enter()
+      .append("circle")
+        .attr("cx", xCircle)
+        .attr("cy", function(d){ return height - 100 - z(d) } )
+        .attr("r", function(d){ return z(d) })
+        .style("fill", "none")
+        .attr("stroke", "black")
+
+    // Add legend: segments
+    svg
+      .selectAll("legend")
+      .data(valuesToShow)
+      .enter()
+      .append("line")
+        .attr('x1', function(d){ return xCircle + z(d) } )
+        .attr('x2', xLabel)
+        .attr('y1', function(d){ return height - 100 - z(d) } )
+        .attr('y2', function(d){ return height - 100 - z(d) } )
+        .attr('stroke', 'black')
+        .style('stroke-dasharray', ('2,2'))
+
+    // Add legend: labels
+    svg
+      .selectAll("legend")
+      .data(valuesToShow)
+      .enter()
+      .append("text")
+        .attr('x', xLabel)
+        .attr('y', function(d){ return height - 100 - z(d) } )
+        .text( function(d){ return d } )
+        .style("font-size", 10)
+        .attr('alignment-baseline', 'middle')
+
+    // Legend title
+    svg.append("text")
+      .attr('x', xCircle)
+      .attr("y", height - 100 +30)
+      .text("Population")
+      .attr("text-anchor", "middle")
+
+    // Add one dot in the legend for each name.
+    var size = 20
+    var allgroups = ["Other", "Sales & Service"]
+    svg.selectAll("myrect")
+      .data(allgroups)
+      .enter()
+      .append("circle")
+        .attr("cx", 720)
+        .attr("cy", function(d,i){ return 10 + i*(size+5)}) // 100 is where the first dot appears. 25 is the distance between dots
+        .attr("r", 7)
+        // .style("fill", function(d){ return myColor(d)})
+        .style("fill", "none" )
+        .style("stroke", function (d) { return myColor(d); } )
+        .attr("stroke-width", "2px")
+        // .on("mouseover", highlight)
+        // .on("mouseleave", noHighlight)
+
+    // Add labels beside legend dots
+    svg.selectAll("mylabels")
+      .data(allgroups)
+      .enter()
+      .append("text")
+        .attr("x", 720 + size*.8)
+        .attr("y", function(d,i){ return i * (size + 5) + (size/2)}) // 100 is where the first dot appears. 25 is the distance between dots
+        .style("fill", function(d){ return myColor(d)})
+        .text(function(d){ return d})
+        .attr("text-anchor", "left")
+        .style("alignment-baseline", "middle")
+        // .on("mouseover", highlight)
+        // .on("mouseleave", noHighlight)
+  })
+
+  // ---------------------------//
+  //       CHART TITLE          //
+  // ---------------------------//
+
+  svg.append("text")
+          .attr("x", (width / 2))
+          .attr("y", 0 - (margin.top / 2))
+          .attr("text-anchor", "middle")
+          .style("font-size", "16px")
+          .style("text-decoration", "bold")
+          .text("The Vulnerability of Ontario's Essential Workers: Wage x Physical Proximity");
+
+
+</script>
